@@ -14,19 +14,41 @@
     <!-- Main Body -->
     <div class="uk-container uk-container-small">
 
+        <!-- Nav -->
+        <nav class="uk-navbar-container  uk-navbar-transparent uk-margin-xlarge-top" uk-navbar>
+            <div class="uk-navbar-center">
+        
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li>
+                        <a href="#">Parent</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Item</a></li>
+                </ul>
+        
+            </div>
+        </nav>
+
         <!-- Bio -->
-        <div class="uk-flex-middle uk-margin-xlarge-top" uk-grid>
+        <div class="uk-flex-middle uk-margin-top" uk-grid>
             <div class="uk-width-1-2@m">
                 <h1>Justin Zhao</h1>
                 <ul class="uk-list">
                     <li><span uk-icon="home"></span> Southern California</li>
-                    <li><span uk-icon="location"></span> NYU Stern</li>
+                    <li><span uk-icon="bolt"></span> NYU Stern c/o 2024</li>
                 </ul>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna.</p>
             </div>
             <div class="uk-width-1-2@m uk-flex-first">
-                <img src="http://placekitten.com/g/500/400" alt="Image">
+                <img src="http://placekitten.com/g/500/500" alt="Image">
             </div>
         </div>
 
