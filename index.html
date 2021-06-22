@@ -12,46 +12,66 @@
 
 <body>
     <!-- Main Body -->
-    <div class="uk-container uk-container-small">
+    <div class="uk-container uk-margin-large-bottom uk-container-small">
 
         <!-- Nav -->
-        <nav class="uk-navbar-container  uk-navbar-transparent uk-margin-xlarge-top" uk-navbar>
+        <nav class="uk-navbar-container uk-navbar-transparent uk-margin-large-top" uk-navbar>
             <div class="uk-navbar-center">
         
                 <ul class="uk-navbar-nav">
-                    <li class="uk-active"><a href="#">Active</a></li>
-                    <li>
-                        <a href="#">Parent</a>
-                        <div class="uk-navbar-dropdown">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li class="uk-active"><a href="#">Active</a></li>
-                                <li><a href="#">Item</a></li>
-                                <li><a href="#">Item</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="#">Item</a></li>
+                    <li class="uk-active"><a href="#">About</a></li>
+                    <li><a href="#">Photography</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Misc.</a></li>
                 </ul>
         
             </div>
         </nav>
 
         <!-- Bio -->
-        <div class="uk-flex-middle uk-margin-top" uk-grid>
+        <div class="uk-flex-middle uk-margin-large-top" uk-grid>
             <div class="uk-width-1-2@m">
                 <h1>Justin Zhao</h1>
                 <ul class="uk-list">
-                    <li><span uk-icon="home"></span> Southern California</li>
                     <li><span uk-icon="bolt"></span> NYU Stern c/o 2024</li>
+                    <li><span uk-icon="home"></span> SoCal</li>
                 </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna.</p>
+                <p>Welcome to my personal website.</p>
             </div>
             <div class="uk-width-1-2@m uk-flex-first">
-                <img src="http://placekitten.com/g/500/500" alt="Image">
+                <img class="uk-box-shadow-large" src="http://placekitten.com/g/600/500" alt="Image">
             </div>
         </div>
 
+        <!-- About -->
+        <div class="uk-flex-middle uk-margin-large-top" uk-grid>
+            <div class="uk-width-1-2@m uk-flex-first">
+                <h1>about me</h1>
+                <p>I am a business and computer science major at NYU. Although I'm now based in NYC, I call southern california my home.</p>
+                <p>I love taking photos while discovering fun, new things to do and eat. Check out my photos <a>here</a>.</p>
+            </div>
+            <div class="uk-width-1-2@m uk-visible@m">
+                <img class="uk-box-shadow-large" src="http://placekitten.com/g/600/500" alt="Image">
+            </div>
+        </div>
+
+<!-- 500  x  364-->
+
+        <!-- Socials -->
+        <div class="uk-container uk-width-1-2">
+            <div class="uk-flex-middle uk-margin-large-top" uk-grid>
+                <div class="uk-width-1-2@m">
+                    <img class="uk-box-shadow-large" src="src/images/about-page/pikachu-greeting.gif" alt="Image">
+                </div>
+                <div class="uk-width-1-2@m">
+                    <ul class="uk-list">
+                        <li><span uk-icon="instagram"></span> <a href="https://www.instagram.com/justinzaho/">@justinzaho</a></li>
+                        <li><span uk-icon="github-alt"></span> <a href="https://github.com/zhaojustin">@zhaojustin</a></li>
+                        <li><span uk-icon="linkedin"></span> <a href="https://www.linkedin.com/in/justin-zhao-68239a18b/"> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
