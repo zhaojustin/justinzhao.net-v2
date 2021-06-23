@@ -6,8 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="src/css/styles.css" />
     <script src="dist/js/uikit.min.js"></script>
     <script src="dist/js/uikit-icons.min.js"></script>
+    
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
 </head>
 
 <body>
@@ -19,7 +22,7 @@
             <div class="uk-navbar-center">
         
                 <ul class="uk-navbar-nav">
-                    <li><a href="index.html">About</a></li>
+                    <li><a href="/index.html">About</a></li>
                     <li class="uk-active"><a href="#">Photography</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Misc.</a></li>
@@ -28,11 +31,14 @@
             </div>
         </nav>
 
+        <main id="swup" class="transition-fade">
+            
+
         <!-- Bio -->
         <div class="uk-flex-middle uk-margin-large-top" uk-grid>
             <div class="uk-width-1-2@m">
                 <h1>my photos</h1>
-                <p>Here are some of my favorite pictures that I've taken.</p>
+                <p>Here are my favorite pictures that I've taken.</p>
                 <p>The rest of them live on my photography instagram page.</p>
                 <ul class="uk-list">
                     <li><span uk-icon="instagram"></span> <a href="https://www.instagram.com/zaho.jpeg/">@zaho.jpeg</a></li>
@@ -59,7 +65,12 @@
             </div>
         </div>
 
+        
+        </main>
+
     </div>
 </body>
+
+<script type="module" src="src/js/main.js"></script>
 
 </html>

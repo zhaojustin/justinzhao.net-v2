@@ -6,8 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="src/css/styles.css" />
     <script src="dist/js/uikit.min.js"></script>
     <script src="dist/js/uikit-icons.min.js"></script>
+    
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
 </head>
 
 <body>
@@ -20,13 +23,15 @@
         
                 <ul class="uk-navbar-nav">
                     <li class="uk-active"><a href="#">About</a></li>
-                    <li><a href="photography.html">Photography</a></li>
+                    <li><a href="/photography.html">Photography</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Misc.</a></li>
                 </ul>
         
             </div>
         </nav>
+
+        <main id="swup" class="transition-fade">
 
         <!-- Bio -->
         <div class="uk-flex-middle uk-margin-large-top" uk-grid>
@@ -55,8 +60,6 @@
             </div>
         </div>
 
-<!-- 500  x  364-->
-
         <!-- Socials -->
         <div class="uk-container uk-width-1-2">
             <div class="uk-flex-middle uk-margin-large-top" uk-grid>
@@ -72,7 +75,11 @@
                 </div>
             </div>
         </div>
+
+        </main>
     </div>
 </body>
+
+<script src="src/js/main.js"></script>
 
 </html>
