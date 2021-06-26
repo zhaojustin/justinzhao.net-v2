@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="src/css/styles.css" />
     <script src="dist/js/uikit.min.js"></script>
     <script src="dist/js/uikit-icons.min.js"></script>
-    
+
     <script src="dist/js/swupSlideTheme.min.js"></script>
     <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
 </head>
@@ -18,62 +18,276 @@
 
     <main id="swup" class="transition-fade">
 
-    <!-- Main Body -->
-    <div class="uk-container uk-margin-large-bottom uk-container-small">
+        <!-- Main Body -->
+        <div class="uk-container uk-margin-large-bottom uk-container">
 
-        <!-- Nav -->
-        <nav class="uk-navbar-container uk-navbar-transparent uk-margin-large-top" uk-navbar>
-            <div class="uk-navbar-center">
-        
-                <ul class="uk-navbar-nav">
-                    <li><a href="/index.html">About</a></li>
-                    <li class="uk-active"><a href="#">Photography</a></li>
-                    <li><a href="/projects.html">Projects</a></li>
-                    <li><a href="/misc.html">Misc.</a></li>
-                </ul>
-        
-            </div>
-        </nav>
-            
+            <!-- Nav -->
+            <nav class="uk-navbar-container uk-navbar-transparent uk-margin-large-top" uk-navbar>
+                <div class="uk-navbar-center">
 
-        <!-- Bio -->
-        <div class="uk-flex-middle uk-margin-large-top" uk-grid>
-            <div class="uk-width-1-2@m">
-                <h1>photos</h1>
-                <p>Some of my favorite shots.</p>
-                <p>They also live on my photography instagram page.</p>
-                <ul class="uk-list">
-                    <li><span uk-icon="instagram"></span> <a href="https://www.instagram.com/zaho.jpeg/">@zaho.jpeg</a></li>
-                </ul>
-            </div>
-            <div class="uk-width-1-2@m uk-flex-first">
-                <img class="uk-box-shadow-large" src="http://placekitten.com/g/600/500" alt="Image">
-            </div>
-        </div>
+                    <ul class="uk-navbar-nav">
+                        <li><a href="/index.html">About</a></li>
+                        <li class="uk-active"><a href="#">Photography</a></li>
+                        <li><a href="/projects.html">Projects</a></li>
+                        <li><a href="/misc.html">Misc.</a></li>
+                    </ul>
 
-        <!-- Images -->
-        <div uk-grid>
-            
-        </div>
-
-        <!-- Socials -->
-        <div class="uk-container uk-width-1-2 uk-margin-xlarge-top">
-            <div class="uk-flex-middle" uk-grid>
-                <div class="uk-width-1-2@m">
-                    <h1>find me</h1>
                 </div>
+            </nav>
+
+
+            <!-- Bio -->
+            <div style="margin:auto" class="uk-container-small uk-flex-middle uk-margin-large-top" uk-grid>
                 <div class="uk-width-1-2@m">
+                    <h1>photos</h1>
+                    <p>Some of my favorite shots.</p>
                     <ul class="uk-list">
-                        <li><span uk-icon="instagram"></span> <a href="https://www.instagram.com/justinzaho/">@justinzaho</a></li>
-                        <li><span uk-icon="github-alt"></span> <a href="https://github.com/zhaojustin">@zhaojustin</a></li>
-                        <li><span uk-icon="linkedin"></span> <a href="https://www.linkedin.com/in/justin-zhao-68239a18b/"> LinkedIn</a></li>
+                        <li><span uk-icon="instagram"></span> <a
+                                href="https://www.instagram.com/zaho.jpeg/">@zaho.jpeg</a></li>
                     </ul>
                 </div>
+                <div class="uk-width-1-2@m uk-flex-first">
+                    <img class="uk-box-shadow-large" data-src="/src/images/photography-page/photos/misc/me.jpg"
+                        width="480" height="360" alt="" alt="Image" uk-img>
+                </div>
             </div>
-        </div>
 
-        
-        </main>
+            <!-- Images -->
+            <div class="uk-flex-middle uk-align-center uk-margin-large-top" uk-grid>
+                <!-- friends -->
+                <div class="uk-container uk-margin-xlarge-top">
+                    <h1 class="uk-heading-line uk-text-center"><span>friends</span></h1>
+                    <div class="uk-grid-small uk-child-width-1-3@m" uk-grid="masonry:true">
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/friends/2020-2-rileygumbo.jpg"
+                                width="400" height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/friends/2019-8-626sarah.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/friends/2020-1-darrenla.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/friends/2021-5-sarahjustinmirror.jpg"
+                                width="400" height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/friends/2020-2-valentines.jpg"
+                                width="400" height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/friends/2020-11-wenxihighline.jpg"
+                                width="400" height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/friends/2020-1-rileyla.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/friends/2020-1-ryanportrait.jpg"
+                                width="400" height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/friends/2020-1-ryanriley.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/friends/2019-8-626alice.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/friends/2020-1-ryanrileychair.jpg"
+                                width="400" height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/friends/2020-1-charissa.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/friends/2020-2-derekportrait.jpg"
+                                width="400" height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/friends/2020-1-jessica.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/friends/2020-3-sarahgriffith.jpg"
+                                width="400" height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/friends/2021-5-sarahflowers.jpg"
+                                width="400" height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/friends/2021-5-sarahla.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/friends/2021-5-sarahsunflower.jpg"
+                                width="400" height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/friends/2021-5-rachelbday.jpg"
+                                width="400" height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/friends/2021-5-sunflowerfield.jpg"
+                                width="400" height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/friends/2021-5-sarahlapeace.jpg"
+                                width="400" height="300" alt="" uk-img />
+                        </div>
+                    </div>
+                </div>
+                <!-- nyc -->
+                <div class="uk-container uk-margin-xlarge-top">
+                    <h1 class="uk-heading-line uk-text-center"><span>new york city</span></h1>
+                    <div class="uk-grid-small uk-child-width-1-3@m" uk-grid="masonry:true">
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/nyc/2020-10-aritzia.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/nyc/2020-10-chinatownnight1.jpg"
+                                width="400" height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/nyc/2020-10-chinatownnight2.jpg"
+                                width="400" height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/nyc/2020-10-chinatownnight3.jpg"
+                                width="400" height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/nyc/2020-10-flower.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/nyc/2020-10-governors.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/nyc/2020-10-governors2.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/nyc/2020-10-governorsboat.jpg"
+                                width="400" height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/nyc/2020-10-governorshair.jpg"
+                                width="400" height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/nyc/2020-10-governorsshoes.jpg"
+                                width="400" height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/nyc/2020-10-lantern.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/nyc/2020-10-nycmade.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/nyc/2020-10-pumpkins.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/nyc/2020-10-soho1.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/nyc/2020-10-soho2.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/nyc/2020-10-sohogirl.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/nyc/2020-10-taiwaneseflag.jpg"
+                                width="400" height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/nyc/2020-11-empirestate.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/nyc/2020-12-dorm.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/nyc/2020-9-wenxibridge.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/nyc/2020-9-wenxisquat.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/nyc/2021-2-rooseveltisland.jpg"
+                                width="400" height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/nyc/2021-4-chinatownday.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/nyc/2021-5-gummies.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+
+                    </div>
+                </div>
+                <!-- la -->
+                <div class="uk-container uk-margin-xlarge-top">
+                    <h1 class="uk-heading-line uk-text-center"><span>los angeles</span></h1>
+                    <div class="uk-grid-small uk-child-width-1-3@m" uk-grid="masonry:true">
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/la/2021-5-la.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/la/2020-12-thesource.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                        <div>
+                            <img data-src="/src/images/photography-page/photos/la/2021-5-littletokyo.jpg" width="400"
+                                height="300" alt="" uk-img />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Socials -->
+            <div class="uk-container uk-width-1-2 uk-margin-xlarge-top">
+                <div class="uk-flex-middle" uk-grid>
+                    <div class="uk-width-1-2@m">
+                        <h1>find me</h1>
+                    </div>
+                    <div class="uk-width-1-2@m">
+                        <ul class="uk-list">
+                            <li><span uk-icon="instagram"></span> <a
+                                    href="https://www.instagram.com/justinzaho/">@justinzaho</a></li>
+                            <li><span uk-icon="github-alt"></span> <a
+                                    href="https://github.com/zhaojustin">@zhaojustin</a></li>
+                            <li><span uk-icon="linkedin"></span> <a
+                                    href="https://www.linkedin.com/in/justin-zhao-68239a18b/"> LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+    </main>
 
     </div>
 </body>
