@@ -39,15 +39,62 @@
         <div class="uk-flex-middle uk-margin-xlarge-top" uk-grid>
             <div class="uk-width-1-2@m">
                 <h1>projects</h1>
-                <ul class="uk-list">
-                    <li><span uk-icon="bolt"></span> NYU Stern c/o 2024</li>
-                    <li><span uk-icon="home"></span> Orange County, CA</li>
-                </ul>
-                <p>Welcome to my personal website.</p>
+                <p>here's a collection of some personal projects I've done.</p>
             </div>
             <div class="uk-width-1-2@m uk-flex-first">
                 <img class="uk-box-shadow-large" src="http://placekitten.com/g/600/500" alt="Image">
             </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="uk-flex-middle uk-align-center uk-margin-large-top" uk-grid>
+            <div style="margin:auto" class="uk-container uk-container-xsmall uk-margin-xlarge-top">
+                <div class="uk-grid-small">
+                    <!-- boba tracker -->
+                    <div class="uk-card uk-card-hover uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                        <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                            <img src="/src/images/project-page/boba-tracker/thumbnail.png" alt="" uk-cover>
+                            <canvas width="600" height="400"></canvas>
+                        </div>
+                        <div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Boba Tracker</h3>
+                                <p>I use this as a personal tool to track my consumption of boba.</p>
+                                <button class="uk-button uk-button-default" type="button" uk-toggle="target: #boba-tracker">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- covid tracker -->
+                    <div class="uk-card uk-card-hover uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                        <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                            <img src="/src/images/project-page/boba-tracker/thumbnail.png" alt="" uk-cover>
+                            <canvas width="600" height="400"></canvas>
+                        </div>
+                        <div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">USA Covid Tracker</h3>
+                                <p>This was a tool targeted mainly for NYU students during Fall 2020.</p>
+                                <button class="uk-button uk-button-default" type="button" uk-toggle="target: #covid-tracker">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- peraton -->
+                    <div class="uk-card uk-card-hover uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                        <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                            <img src="/src/images/project-page/boba-tracker/thumbnail.png" alt="" uk-cover>
+                            <canvas width="600" height="400"></canvas>
+                        </div>
+                        <div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">USA Covid Tracker</h3>
+                                <p>This was a tool targeted mainly for NYU students during Fall 2020.</p>
+                                <button class="uk-button uk-button-default" type="button" uk-toggle="target: #covid-tracker">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
         </div>
 
         <!-- Socials -->
@@ -67,6 +114,70 @@
         </div>
 
         </main>
+
+        <!-- MODALS -->
+
+        <!-- boba tracker modal -->
+        <div id="boba-tracker" uk-modal>
+            <div class="uk-modal-dialog uk-width-2xlarge uk-padding uk-modal-body uk-margin-auto-vertical ">
+                <h2 class="uk-modal-title">Boba Tracker</h2>
+                    <!-- body -->
+                    <div class="uk-flex-middle uk-margin-top" uk-grid>
+                        <div class="uk-width-1-2@m uk-flex-first">
+                            <p>I mainly made this webapp in order to learn new javascript and front-end development frameworks.</p>
+                            <p>For this project, I learned how to use Pug and Svelte.</p>
+                        </div>
+                        <div class="uk-width-1-2@m uk-visible@m">
+                            <img class="uk-box-shadow-large" src="/src/images/project-page/boba-tracker/pug.jpeg" alt="Image">
+                            <img class="uk-box-shadow-large" src="/src/images/project-page/boba-tracker/svelte.png" alt="Image">
+                        </div>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-large-top" uk-grid>
+                        <div class="uk-width-1-2@m">
+                            <p>From this project, I also learned how to connect a basic database such as Google Sheets to the front end UI.</p>
+                            <p>The spreadsheet holds all the information about the different drinks that I consume throughout the year.</p>
+                        </div>
+                        <div class="uk-width-1-2@m uk-flex-first">
+                            <img class="uk-box-shadow-large" src="/src/images/project-page/boba-tracker/spreadsheet.png" alt="Image">
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!-- covid tracker modal -->
+        <div id="covid-tracker" uk-modal>
+            <div class="uk-modal-dialog uk-width-2xlarge uk-padding uk-modal-body uk-margin-auto-vertical ">
+                <h2 class="uk-modal-title">USA Covid Tracker</h2>
+                    <!-- body -->
+                    <div class="uk-flex-middle uk-margin-top" uk-grid>
+                        <div class="uk-width-1-2@m uk-flex-first">
+                            <p>During Fall 2020, NYU administration allowed students to go home for winter break. However,
+                                New York covid guidelines required that travelers from certain states had to quarantine for 14 days.
+                            </p>
+                            <p>
+                                However, these "certain" states were often changing. New York stated that states with high rates of covid, 
+                                along with some other guidelines, put them on a "quarantine" list. This list was updated every week.
+                            </p>
+                        </div>
+                        <div class="uk-width-1-2@m uk-visible@m">
+                            <img class="uk-box-shadow-large" src="/src/images/project-page/boba-tracker/spreadsheet.png" alt="Image">
+                        </div>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-large-top" uk-grid>
+                        <div class="uk-width-1-2@m">
+                            <p>This is a problem, since winter break is only 1 month long. If students were to go home, they would need
+                                 to know when they must return so that they can quarantine in time for Spring 2021 classes.</p>
+                            <p>Therefore, my tool solves this problem by showing how each state's covid rates compared to the New York 
+                                guidelines. It helped students make decisions about whether or not it was worth to go home for the holidays.
+                            </p>
+                        </div>
+                        <div class="uk-width-1-2@m uk-flex-first">
+                            <img class="uk-box-shadow-large" src="/src/images/project-page/nyc-covid/nyc-covid.jpg" alt="Image">
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+
     </div>
 </body>
 
