@@ -48,88 +48,35 @@
             </div>
 
             <!-- Project Gallery -->
-            <div class="uk-flex-middle uk-align-center uk-margin-xlarge-top" uk-grid>
-                <div class="uk-child-width-1-3@m" uk-grid>
-                    <div>
-                        <div class="uk-card uk-card-default">
-                            <div class="uk-card-media-top">
-                                <img src="./src/images/project-page/nyc-covid/screenshot.png" height="280" alt="">
-                            </div>
-                            <div class="uk-card-body">
-                                <h3 class="uk-card-title">NY COVID Tracker</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt.</p>
-                            </div>
-                            <div class="uk-card-footer">
-                                <a href="#" class="uk-button uk-button-text">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="uk-card uk-card-default">
-                            <div class="uk-card-media-top">
-                                <img src="./src/images/project-page/boba-tracker/thumbnail.png" alt="">
-                            </div>
-                            <div class="uk-card-body">
-                                <h3 class="uk-card-title">Boba Database</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt.</p>
-                            </div>
-                            <div class="uk-card-footer">
-                                <a href="#" class="uk-button uk-button-text">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="uk-card uk-card-default">
-                            <div class="uk-card-media-top">
-                                <img src="./src/images/project-page/boba-tracker/thumbnail.png" height="280" alt="">
-                            </div>
-                            <div class="uk-card-body">
-                                <h3 class="uk-card-title">Boba Database</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="uk-flex-middle uk-align-center uk-margin-xlarge-top uk-grid-medium" uk-grid>
+                <div class="uk-child-width-1-3@m" uk-grid uk-height-match="target: > div > .uk-card">
 
-            <!-- COVID Tracker -->
-            <div class="uk-card uk-card-default uk-grid-collapse uk-padding" uk-grid>
-                <div class="uk-width-1-2@m">
-                    <h3 class="uk-card-title">NYC COVID Tracker</h3>
-                    <p>During fall of 2020, New York required 2-week quarantines for travelers from designated
-                        'hotspot' states. However, the criteria for a 'hotspot' state was confusing and the list
-                        of 'hotspot' states changed every week. As a result, I made this tracker to show how
-                        close states were to being called a 'hotspot' in order to help NYU students make decisions
-                        about whether or not it was worth to go home for the holidays.
-                    </p>
-                </div>
-                <div class="uk-width-1-2@m uk-margin">
-                    <div class="uk-cover-container">
-                        <img src="./src/images/project-page/nyc-covid/screenshot.png" alt="" uk-cover>
-                        <canvas width="600" height="400"></canvas>
+                    <!-- COVID Data -->
+                    <div>
+                        <div class="uk-card uk-card-secondary uk-card-hover uk-card-body pointer">
+                            <h3 class="uk-card-title">&#x1F489; NY COVID Data</h3>
+                            <p>I made this COVID tracker specifically for the use of students in New York in the fall of 2020 due to the mandatory 2-week quarantine.</p>
+                            <a href="#" class="uk-button uk-button-text" uk-toggle="target: #covid-tracker">Read more</a>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <!-- Boba Tracker -->
-            <div class="uk-card uk-card-default uk-grid-collapse uk-padding" uk-grid>
-                <div class="uk-width-1-2@m uk-margin">
-                    <div class="uk-cover-container">
-                        <img src="./src/images/project-page/boba-tracker/new-entry.png" alt="" uk-cover>
-                        <canvas width="600" height="400"></canvas>
+                    <!-- Boba Tracker -->
+                    <div>
+                        <div class="uk-card uk-card-secondary uk-card-hover uk-card-body pointer">
+                            <h3 class="uk-card-title">&#x1F9C3;	Boba Tracker</h3>
+                            <p>I made a Boba Tracker to discourage myself from getting boba by always displaying how much I've spent on it this year.</p>
+                            <a href="#" class="uk-button uk-button-text" uk-toggle="target: #boba-tracker">Read more</a>
+                        </div>
                     </div>
-                </div>
-                <div class="uk-width-1-2@m">
-                    <h3 class="uk-card-title">Boba Tracker</h3>
-                    <p>One of my new year's resolutions for 2021 was to drink less boba. To do so, I made a webapp
-                        where I could track all the times I drank boba throughout 2021. It would tell me how much
-                        money I've spent, how many times I've drank boba, and when the last time I got it was. By
-                        doing so, I discourage myself from getting it too often and also get to see data about my
-                        favorite drinks and stores.
-                    </p>
+
+                    <!-- Coming Soon... -->
+                    <div>
+                        <div class="uk-card uk-card-secondary uk-card-body">
+                            <h3 class="uk-card-title">&#x1F528; WIP...</h3>
+                            <p>I am always working on projects, so there will be more coming soon!</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -151,20 +98,34 @@
                     </div>
                 </div>
             </div>
+
     </main>
 
     <!-- MODALS -->
 
     <!-- boba tracker modal -->
     <div id="boba-tracker" uk-modal>
-        <div class="uk-modal-dialog uk-width-2xlarge uk-padding uk-modal-body uk-margin-auto-vertical ">
-            <h2 class="uk-modal-title">Boba Tracker</h2>
+        <div class="uk-modal-dialog uk-width-2xlarge uk-padding-large uk-modal-body uk-margin-auto-vertical ">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <h2 class="uk-modal-title">&#x1F9C3; Boba Tracker</h2>
             <!-- body -->
-            <div class="uk-flex-middle uk-margin-top" uk-grid>
+            <div class="uk-flex-middle uk-margin-large-top" uk-grid>
+                <div class="uk-width-1-2@m">
+                    <p>My new year's resolution for 2021 was to drink less boba, since I had spent so much money on it in 2020. And also it's not good for my health.</p>
+                    <p>Therefore, I decided to make this webapp to track each time I drink it, and show statistics like how much money I've spent on it and when I last had it in order to discourage myself from getting boba too much.</p>
+                </div>
+                <div class="uk-width-1-2@m uk-flex-first">
+                    <img class="uk-box-shadow-large" src="./src/images/project-page/boba-tracker/spreadsheet.png"
+                        alt="Image">
+                </div>
+            </div>
+            <div class="uk-flex-middle uk-margin-large-top" uk-grid>
                 <div class="uk-width-1-2@m uk-flex-first">
                     <p>I mainly made this webapp in order to learn new javascript and front-end development frameworks.
                     </p>
-                    <p>For this project, I learned how to use Pug and Svelte.</p>
+                    <p>For this project, I learned how to use Pug and Svelte. I also learned how to connect a basic database such as Google Sheets to the
+                        front end UI. The spreadsheet holds all the information about the different drinks that I consume throughout
+                        the year.</p>
                 </div>
                 <div class="uk-width-1-2@m uk-visible@m">
                     <img class="uk-box-shadow-large" src="./src/images/project-page/boba-tracker/pug.jpeg" alt="Image">
@@ -172,56 +133,35 @@
                         alt="Image">
                 </div>
             </div>
-            <div class="uk-flex-middle uk-margin-large-top" uk-grid>
-                <div class="uk-width-1-2@m">
-                    <p>From this project, I also learned how to connect a basic database such as Google Sheets to the
-                        front end UI.</p>
-                    <p>The spreadsheet holds all the information about the different drinks that I consume throughout
-                        the year.</p>
-                </div>
-                <div class="uk-width-1-2@m uk-flex-first">
-                    <img class="uk-box-shadow-large" src="./src/images/project-page/boba-tracker/spreadsheet.png"
-                        alt="Image">
-                </div>
-            </div>
         </div>
     </div>
+
     <!-- covid tracker modal -->
     <div id="covid-tracker" uk-modal>
-        <div class="uk-modal-dialog uk-width-2xlarge uk-padding uk-modal-body uk-margin-auto-vertical ">
-            <h2 class="uk-modal-title">USA Covid Tracker</h2>
+        <div class="uk-modal-dialog uk-width-2xlarge uk-padding-large uk-modal-body uk-margin-auto-vertical ">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <h2 class="uk-modal-title">&#x1F489; NY COVID Data</h2>
             <!-- body -->
-            <div class="uk-flex-middle uk-margin-top" uk-grid>
+            <div class="uk-flex-middle uk-margin-large-top" uk-grid>
                 <div class="uk-width-1-2@m uk-flex-first">
-                    <p>During Fall 2020, NYU administration allowed students to go home for winter break. However,
-                        New York covid guidelines required that travelers from certain states had to quarantine for 14
-                        days.
-                    </p>
-                    <p>
-                        However, these "certain" states were often changing. New York stated that states with high rates
-                        of covid,
-                        along with some other guidelines, put them on a "quarantine" list. This list was updated every
-                        week.
+                    <p>During Fall 2020, New York covid guidelines required that travelers from "hotspot" states had to quarantine for 2 weeks.
+                        However, these "hotspot" states changed every week, and the criteria for being a "hotspot" state was confusing.
                     </p>
                 </div>
                 <div class="uk-width-1-2@m uk-visible@m">
-                    <img class="uk-box-shadow-large" src="./src/images/project-page/boba-tracker/spreadsheet.png"
+                    <img class="uk-box-shadow-large" src="./src/images/project-page/nyc-covid/screenshot.png"
                         alt="Image">
                 </div>
             </div>
             <div class="uk-flex-middle uk-margin-large-top" uk-grid>
                 <div class="uk-width-1-2@m">
-                    <p>This is a problem, since winter break is only 1 month long. If students were to go home, they
-                        would need
-                        to know when they must return so that they can quarantine in time for Spring 2021 classes.</p>
-                    <p>Therefore, my tool solves this problem by showing how each state's covid rates compared to the
-                        New York
-                        guidelines. It helped students make decisions about whether or not it was worth to go home for
-                        the holidays.
+                    <p>I took data from the <a href="https://covidtracking.com/">COVID Tracking Project</a> and was able to make a 
+                        table that showed which states were "hotspot" states, and which ones were close to being so. This helped
+                        students in New York make the decision about whether or not it was worth to go home if they had to quarantine when they came back.
                     </p>
                 </div>
                 <div class="uk-width-1-2@m uk-flex-first">
-                    <img class="uk-box-shadow-large" src="./src/images/project-page/nyc-covid/nyc-covid.jpg"
+                    <img class="uk-box-shadow-large" src="./src/images/project-page/nyc-covid/covidtrackingproject.png"
                         alt="Image">
                 </div>
             </div>
