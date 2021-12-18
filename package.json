@@ -64,6 +64,7 @@
   },
   "dependencies": {
     "@barba/core": "^2.9.7",
-    "@barba/css": "^2.1.15"
+    "@barba/css": "^2.1.15",
+    "micromodal": "^0.4.10"
   }
 }
